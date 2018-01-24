@@ -12,7 +12,7 @@ $prisonerCrime = ["larceny", "embezzlement", "praising Comcast", "tampering with
 
 $prisonerName = ["Brent", "Miguel", "Nat"];
 
-$prisoner1 = array_rand($prisonerName);
-$prisoner1Crime = array_rand($prisonerCrime);
+$prisoner1 = $prisonerName[array_rand($prisonerName)];
+$prisoner1Crime = $prisonerCrime[array_rand($prisonerCrime)];
 
 echo "$prisoner1 charged with $prisoner1Crime";
