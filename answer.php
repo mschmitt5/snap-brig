@@ -14,6 +14,13 @@ function throwInBrig() {
     $perpetrator = array_rand($prisoners);
 
     echo "Mr. Worf, throw $perpetrator in the brig for $conviction" . PHP_EOL;
+
+    $solitaryCell = new \stdClass();
+    $solitaryCell->conviction = $conviction;
+    $solitaryCell->perpetrator = $perpetrator;
+    return($solitaryCell);
 }
 
-throwInBrig();
+$solitaryCell = throwInBrig();
+
+var_dump($solitaryCell);
