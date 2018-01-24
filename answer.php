@@ -15,3 +15,5 @@ function throwInBrig() {
 
     echo "Mr. Worf, throw $perpetrator in the brig for $conviction" . PHP_EOL;
 }
+
+throwInBrig();
